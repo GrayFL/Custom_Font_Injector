@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Custom Font Injector",
+    "version": "1.0",
+    "description": "Inject custom font to web pages\n网页字体替换",
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["inject.js"]
+        }
+    ],
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+    }
+}
+

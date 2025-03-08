@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Font Injector Settings</title>
+    <style>
+        body {
+            width: 300px;
+            padding: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="font-input">Font:</label>
+    <input type="text" id="font-input">
+    <label for="excluded-selector-input">Excluded Selector:</label>
+    <input type="text" id="excluded-selector-input">
+    <label for="included-selector-input">Included Selector:</label>
+    <input type="text" id="included-selector-input">
+    <button id="save-button">Save Settings</button>
+    <script src="popup.js"></script>
+</body>
+
+</html>
