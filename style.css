@@ -1,0 +1,31 @@
+body {
+    width: 300px;
+    padding: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    min-height: 5rem;
+    max-height: 10rem;
+    resize: vertical;
+}
+
+textarea.big-textarea {
+    min-height: 10rem;
+    max-height: 20rem; 
+}
+
+button {
+    width: 100%;
+}

@@ -26,14 +26,16 @@ language: zh-CN
 
 直接点击该扩展，会弹出一个简易设置框
 
-![弹出设置框](assets/usage_popup.png)
+<!-- ![弹出设置框](assets/usage_popup.png) -->
+
+![弹出设置框](assets/usage_popup_v1_1.png)
 
 第一栏可以填入系统上的自定义字体，格式为标准的 css font-family 格式。在这个设置页面字体是实时预览的
 
 第二栏和第三栏分别为过滤选择器和强制渲染选择器，格式同样为标准的 css ，如果你没有特别的需求，直接使用默认值即可。其中，若网页某元素匹配上过滤选择器，则它和它的子元素都会被跳过；而匹配上强制渲染则保证一定添加字体覆盖
 
 > 正常情况下，添加样式覆盖采用的是往包含 `class` 的元素追加自定义样式类的方式，而强制渲染则是往该元素的 `style` 中写入自定义样式内容
-> 默认过滤设置 `'pre, code, *[class*="katex"] [aria-hidden="true"], [class*="fa-"], .fa, .fab, .fad, .fal, .far, .fas, .fass, .fasr, .fat, .icofont, [style*="font-"], [class*="icon"], [class*="Icon"], [class*="symbol"], [class*="Symbol"], .glyphicon, [class*="material-symbol"], [class*="material-icon"], mu, [class*="mu-"], .typcn, [class*="vjs-"]'`
+> 默认过滤设置 `'pre, code, *[class*="katex"], [aria-hidden="true"], [class*="fa-"], .fa, .fab, .fad, .fal, .far, .fas, .fass, .fasr, .fat, .icofont, [style*="font-"], [class*="icon"], [class*="Icon"], [class*="symbol"], [class*="Symbol"], .glyphicon, [class*="material-symbol"], [class*="material-icon"], mu, [class*="mu-"], .typcn, [class*="vjs-"]'`
 
 需要注意的是，**第一次打开设置框时，需要填写设置后点击“Save Settings”按钮，才能将设置保存到本地**，若没有手动指定任何值（或者保存值为空），那么每次打开设置框时，都会显示上图的提示
 

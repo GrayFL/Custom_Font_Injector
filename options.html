@@ -5,35 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom Font Injector Settings</title>
-    <style>
-        body {
-            width: 300px;
-            padding: 10px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        input {
-            width: 100%;
-            margin-bottom: 10px;
-        }
-
-        button {
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
     <label for="font-input">Font:</label>
     <input type="text" id="font-input">
     <label for="excluded-selector-input">Excluded Selector:</label>
-    <input type="text" id="excluded-selector-input">
+    <textarea id="excluded-selector-input"></textarea>
     <label for="included-selector-input">Included Selector:</label>
-    <input type="text" id="included-selector-input">
+    <textarea id="included-selector-input"></textarea>
+    <label for="exclude-url-regex-input">Exclude URL Regex:</label>
+    <textarea id="excluded-url-regex-input" class="big-textarea"></textarea>
     <button id="save-button">Save Settings</button>
     <script src="options.js"></script>
 </body>
